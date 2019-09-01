@@ -4,6 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="${pageContext.request.contextPath}/test.do">test</a>
+success!
 </body>
 </html>
