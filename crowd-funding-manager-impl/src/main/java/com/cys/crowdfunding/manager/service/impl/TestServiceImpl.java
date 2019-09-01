@@ -22,6 +22,10 @@ public class TestServiceImpl implements TestService {
     public void insert() {
         Map map = new HashMap();
         map.put("name", "张三");
-        testDao.insert(map);
+        try {
+            testDao.insert(map);
+        }catch (Exception e ){
+            e.printStackTrace();
+        }
     }
 }
