@@ -10,7 +10,7 @@
         <!--如果想把其它jar包的配置文件，需要加上*-->
         <param-value>classpath*:spring/spring-*.xml</param-value>
     </context-param>
-    
+
     <!-- 监听器
         创建Spring框架的ioc容器，将ioc容器放在application域中
         获取ioc容器
@@ -24,6 +24,9 @@
      -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.cys.crowdfunding.listener.StartSystemListener</listener-class>
     </listener>
 
     <!-- 字符编码过滤器 -->
@@ -43,15 +46,15 @@
         <filter-name>encoding</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-	    
-	<filter>  
-	    <filter-name>HiddenHttpMethodFilter</filter-name>  
-	    <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>  
-	</filter>
-	<filter-mapping>  
-	    <filter-name>HiddenHttpMethodFilter</filter-name>  
-	    <servlet-name>springmvc</servlet-name>  
-	</filter-mapping> 
+
+    <filter>
+        <filter-name>HiddenHttpMethodFilter</filter-name>
+        <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>HiddenHttpMethodFilter</filter-name>
+        <servlet-name>springmvc</servlet-name>
+    </filter-mapping>
 
     <servlet>
         <servlet-name>springmvc</servlet-name>
@@ -67,12 +70,12 @@
         <url-pattern>*.htm</url-pattern>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
-    
+
     <!-- 会话超时时间 -->
     <session-config>
         <session-timeout>60</session-timeout>
     </session-config>
-    
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

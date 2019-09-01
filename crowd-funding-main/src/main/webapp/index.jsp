@@ -4,6 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="${pageContext.request.contextPath}/test.do">test</a>
+    <a href="${APP_PATH}/test.do">test</a>
 </body>
 </html>

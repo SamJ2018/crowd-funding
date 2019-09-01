@@ -59,6 +59,6 @@
 	
 	<aop:config>
 		<aop:advisor advice-ref="transactionAdvice" pointcut="execution(* com.cys.crowdfunding..*Service.*(..))"/>
-	</aop:config>		
+	</aop:config>
 
 </beans>
