@@ -7,3 +7,10 @@
 *.iml
 out
 gen
+crowd-funding-common/target
+crowd-funding-main/target
+crowd-funding-manager-api/target
+crowd-funding-bean/target
+crowd-funding-manager-impl/target
+crowd-funding-portal-impl/target
+crowd-funding-portal-api/target

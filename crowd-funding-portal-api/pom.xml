@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cys</groupId>
-    <artifactId>crowd-funding-potal-api</artifactId>
+    <artifactId>crowd-funding-portal-api</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

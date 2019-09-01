@@ -11,6 +11,8 @@
 
     <groupId>com.cys</groupId>
     <artifactId>crowd-funding-manager-impl</artifactId>
+    <packaging>jar</packaging>
+
 
     <dependencies>
         <dependency>

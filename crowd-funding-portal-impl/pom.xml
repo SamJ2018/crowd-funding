@@ -10,12 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cys</groupId>
-    <artifactId>crowd-funding-potal-impl</artifactId>
+    <artifactId>crowd-funding-portal-impl</artifactId>
+    <packaging>jar</packaging>
+
 
     <dependencies>
         <dependency>
             <groupId>com.cys</groupId>
-            <artifactId>crowd-funding-potal-api</artifactId>
+            <artifactId>crowd-funding-portal-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

@@ -9,8 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cys</groupId>
     <artifactId>crowd-funding-bean</artifactId>
+    <packaging>jar</packaging>
+
 
 
 </project>
