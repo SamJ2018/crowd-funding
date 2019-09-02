@@ -1,6 +1,7 @@
-package com.atguigu.atcrowdfunding.manager.dao;
+package com.cys.crowdfunding.manager.dao;
 
-import com.atguigu.atcrowdfunding.bean.Param;
+import com.cys.crowdfunding.bean.Param;
+
 import java.util.List;
 
 public interface ParamMapper {

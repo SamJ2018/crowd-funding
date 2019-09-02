@@ -6,4 +6,5 @@ package com.cys.crowdfunding.utils;
  * @since 2019-09-02-9:01
  **/
 public class Const {
+    public static final String LOGIN_USER = "user";
 }

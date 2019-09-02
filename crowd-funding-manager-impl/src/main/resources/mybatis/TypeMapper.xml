@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.atguigu.atcrowdfunding.manager.dao.TypeMapper" >
-  <resultMap id="BaseResultMap" type="com.atguigu.atcrowdfunding.bean.Type" >
+<mapper namespace="com.cys.crowdfunding.manager.dao.TypeMapper" >
+  <resultMap id="BaseResultMap" type="com.cys.crowdfunding.bean.Type" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="remark" property="remark" jdbcType="VARCHAR" />
@@ -10,13 +10,13 @@
     delete from t_type
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.atguigu.atcrowdfunding.bean.Type" >
+  <insert id="insert" parameterType="com.cys.crowdfunding.bean.Type" >
     insert into t_type (id, name, remark
       )
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}
       )
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.atguigu.atcrowdfunding.bean.Type" >
+  <update id="updateByPrimaryKey" parameterType="com.cys.crowdfunding.bean.Type" >
     update t_type
     set name = #{name,jdbcType=VARCHAR},
       remark = #{remark,jdbcType=VARCHAR}

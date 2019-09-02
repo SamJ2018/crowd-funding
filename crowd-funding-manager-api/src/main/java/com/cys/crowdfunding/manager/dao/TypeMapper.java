@@ -1,6 +1,7 @@
-package com.atguigu.atcrowdfunding.manager.dao;
+package com.cys.crowdfunding.manager.dao;
 
-import com.atguigu.atcrowdfunding.bean.Type;
+import com.cys.crowdfunding.bean.Type;
+
 import java.util.List;
 
 public interface TypeMapper {

@@ -1,4 +1,4 @@
-package com.atguigu.atcrowdfunding.bean;
+package com.cys.crowdfunding.bean;
 
 public class Return {
     private Integer id;

@@ -1,6 +1,7 @@
-package com.atguigu.atcrowdfunding.manager.dao;
+package com.cys.crowdfunding.manager.dao;
 
-import com.atguigu.atcrowdfunding.bean.Dictionary;
+import com.cys.crowdfunding.bean.Dictionary;
+
 import java.util.List;
 
 public interface DictionaryMapper {

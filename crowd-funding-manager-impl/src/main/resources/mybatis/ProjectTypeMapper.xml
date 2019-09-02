@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.atguigu.atcrowdfunding.manager.dao.ProjectTypeMapper" >
-  <resultMap id="BaseResultMap" type="com.atguigu.atcrowdfunding.bean.ProjectType" >
+<mapper namespace="com.cys.crowdfunding.manager.dao.ProjectTypeMapper" >
+  <resultMap id="BaseResultMap" type="com.cys.crowdfunding.bean.ProjectType" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="projectid" property="projectid" jdbcType="INTEGER" />
     <result column="typeid" property="typeid" jdbcType="INTEGER" />
@@ -10,13 +10,13 @@
     delete from t_project_type
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.atguigu.atcrowdfunding.bean.ProjectType" >
+  <insert id="insert" parameterType="com.cys.crowdfunding.bean.ProjectType" >
     insert into t_project_type (id, projectid, typeid
       )
     values (#{id,jdbcType=INTEGER}, #{projectid,jdbcType=INTEGER}, #{typeid,jdbcType=INTEGER}
       )
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.atguigu.atcrowdfunding.bean.ProjectType" >
+  <update id="updateByPrimaryKey" parameterType="com.cys.crowdfunding.bean.ProjectType" >
     update t_project_type
     set projectid = #{projectid,jdbcType=INTEGER},
       typeid = #{typeid,jdbcType=INTEGER}

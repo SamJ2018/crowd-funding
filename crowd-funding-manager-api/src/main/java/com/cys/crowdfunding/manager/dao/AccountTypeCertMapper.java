@@ -1,6 +1,7 @@
-package com.atguigu.atcrowdfunding.manager.dao;
+package com.cys.crowdfunding.manager.dao;
 
-import com.atguigu.atcrowdfunding.bean.AccountTypeCert;
+import com.cys.crowdfunding.bean.AccountTypeCert;
+
 import java.util.List;
 
 public interface AccountTypeCertMapper {

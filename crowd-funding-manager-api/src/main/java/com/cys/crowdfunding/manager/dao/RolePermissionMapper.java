@@ -1,6 +1,7 @@
-package com.atguigu.atcrowdfunding.manager.dao;
+package com.cys.crowdfunding.manager.dao;
 
-import com.atguigu.atcrowdfunding.bean.RolePermission;
+import com.cys.crowdfunding.bean.RolePermission;
+
 import java.util.List;
 
 public interface RolePermissionMapper {

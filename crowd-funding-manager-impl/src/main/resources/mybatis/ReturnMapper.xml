@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.atguigu.atcrowdfunding.manager.dao.ReturnMapper" >
-  <resultMap id="BaseResultMap" type="com.atguigu.atcrowdfunding.bean.Return" >
+<mapper namespace="com.cys.crowdfunding.manager.dao.ReturnMapper" >
+  <resultMap id="BaseResultMap" type="com.cys.crowdfunding.bean.Return" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="projectid" property="projectid" jdbcType="INTEGER" />
     <result column="type" property="type" jdbcType="CHAR" />
@@ -18,7 +18,7 @@
     delete from t_return
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.atguigu.atcrowdfunding.bean.Return" >
+  <insert id="insert" parameterType="com.cys.crowdfunding.bean.Return" >
     insert into t_return (id, projectid, type, 
       supportmoney, content, count, 
       signalpurchase, purchase, freight, 
@@ -28,7 +28,7 @@
       #{signalpurchase,jdbcType=INTEGER}, #{purchase,jdbcType=INTEGER}, #{freight,jdbcType=INTEGER}, 
       #{invoice,jdbcType=CHAR}, #{rtndate,jdbcType=INTEGER})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.atguigu.atcrowdfunding.bean.Return" >
+  <update id="updateByPrimaryKey" parameterType="com.cys.crowdfunding.bean.Return" >
     update t_return
     set projectid = #{projectid,jdbcType=INTEGER},
       type = #{type,jdbcType=CHAR},

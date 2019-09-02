@@ -1,6 +1,7 @@
-package com.atguigu.atcrowdfunding.manager.dao;
+package com.cys.crowdfunding.manager.dao;
 
-import com.atguigu.atcrowdfunding.bean.Return;
+import com.cys.crowdfunding.bean.Return;
+
 import java.util.List;
 
 public interface ReturnMapper {

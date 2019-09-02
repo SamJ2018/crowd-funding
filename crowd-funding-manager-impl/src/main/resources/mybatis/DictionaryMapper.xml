@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.atguigu.atcrowdfunding.manager.dao.DictionaryMapper" >
-  <resultMap id="BaseResultMap" type="com.atguigu.atcrowdfunding.bean.Dictionary" >
+<mapper namespace="com.cys.crowdfunding.manager.dao.DictionaryMapper" >
+  <resultMap id="BaseResultMap" type="com.cys.crowdfunding.bean.Dictionary" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="code" property="code" jdbcType="VARCHAR" />
@@ -12,13 +12,13 @@
     delete from t_dictionary
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.atguigu.atcrowdfunding.bean.Dictionary" >
+  <insert id="insert" parameterType="com.cys.crowdfunding.bean.Dictionary" >
     insert into t_dictionary (id, name, code, 
       subcode, val)
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{code,jdbcType=VARCHAR}, 
       #{subcode,jdbcType=VARCHAR}, #{val,jdbcType=VARCHAR})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.atguigu.atcrowdfunding.bean.Dictionary" >
+  <update id="updateByPrimaryKey" parameterType="com.cys.crowdfunding.bean.Dictionary" >
     update t_dictionary
     set name = #{name,jdbcType=VARCHAR},
       code = #{code,jdbcType=VARCHAR},
