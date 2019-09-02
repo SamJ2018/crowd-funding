@@ -27,13 +27,13 @@
 		<property name="password" value="${jdbc.password}"/>
 	</bean>
 	
-	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<bean id="sqlSessionFactory" class="com.cys.crowdfunding.factory.SecureSqlSessionFactoryBean">
 	    <property name="configLocation" value="classpath:mybatis/mybatis-config.xml" />
 	    <property name="dataSource" ref="dataSource" />
 	    <property name="mapperLocations">
 	        <list>
 				<!--注意 * 很关键-->
-	            <value>classpath*:mybatis/mapper-*.xml</value>
+	            <value>classpath*:mybatis/*Mapper.xml</value>
 	        </list>
 	    </property>
 	</bean>

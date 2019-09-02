@@ -36,13 +36,14 @@
         <property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp" />
     </bean>
-    
-    <bean id="exceptionResolver"  
+
+   <bean id="exceptionResolver"
         class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  
-        <property name="exceptionMappings">  
+        <property name="exceptionMappings">
             <props>
                 <prop key="java.lang.Exception">error/error</prop>
-            </props>  
+                <prop key="com.cys.crowdfunding.exception.LoginFailException">login</prop>
+            </props>
         </property>  
     </bean>
 
