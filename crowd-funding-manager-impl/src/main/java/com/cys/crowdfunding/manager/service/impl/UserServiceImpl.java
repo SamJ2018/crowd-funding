@@ -4,9 +4,11 @@ import com.cys.crowdfunding.bean.User;
 import com.cys.crowdfunding.exception.LoginFailException;
 import com.cys.crowdfunding.manager.dao.UserMapper;
 import com.cys.crowdfunding.manager.service.UserService;
+import com.cys.crowdfunding.utils.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,5 +29,20 @@ public class UserServiceImpl implements UserService {
             throw new LoginFailException("用户帐号或密码不正确!");
         }
         return user;
+    }
+
+    @Override
+    public Page queryPage(Integer pageno, Integer pagesize) {
+        Page page = new Page(pageno, pagesize);
+        List<User> datas = userMapper.queryList(page.startIndex(), pagesize);
+        page.setDatas(datas);
+        Integer totalsize = userMapper.queryCount();
+        page.setTotalsize(totalsize);
+        return page;
+    }
+
+    @Override
+    public int saveUser(User user) {
+       return userMapper.insert(user);
     }
 }
